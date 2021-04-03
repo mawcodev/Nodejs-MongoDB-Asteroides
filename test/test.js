@@ -1,7 +1,7 @@
 /*
-* Fichero: 
-* Autor:
-* Fecha: 
+* Fichero: test.js
+* Autor: Matthew Conde Oltra
+* Fecha: 03/04/2021
 */
 var assert = require('assert');
 describe('Array', function() {
