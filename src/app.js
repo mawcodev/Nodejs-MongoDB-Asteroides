@@ -6,6 +6,9 @@
 import express from "express";
 import config from "./config";
 import router from "./router";
+import "./db";
+import "./createJSONfile";
+
 
 const app = express();
 
