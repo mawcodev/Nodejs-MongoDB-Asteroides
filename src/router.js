@@ -3,7 +3,8 @@
 * Autor: Matthew Conde Oltra
 * Fecha: 03/04/2021
 */
-import asteriodRoutes from './asteroid.routes';
+import asteroidRoutes from './asteroid.routes';
+
 export default(app) => {
 
     /*app.get('/', async (req, res) => {
@@ -11,5 +12,5 @@ export default(app) => {
         res.send('Primera ruta 💻');
     });*/
 
-    app.use('/', asteriodRoutes); 
+    app.use('/', asteroidRoutes); 
 }

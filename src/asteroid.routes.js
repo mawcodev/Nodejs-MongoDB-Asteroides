@@ -4,14 +4,17 @@
 * Fecha: 03/04/2021
 */
 
-
-
 import express from 'express';
-import AsteroidRequest from './request';
+import Request from './request';
 
 const router = express.Router();
 
-router.post('/save-asteroid', AsteroidRequest.saveDataAsteroid(data));
+router.get('/get-all-asteroid', Request.getAllAsteroid);
+router.post('/save-asteroid', Request.saveAsteroid);
+router.get('/get-asteroid/:id', Request.getAsteroid);
+router.delete('/delete-asteroid/:id', Request.deleteAsteroid);
+router.put('/update-asteroid/:id', Request.updateAsteroid);
+
 
 
 export default router;

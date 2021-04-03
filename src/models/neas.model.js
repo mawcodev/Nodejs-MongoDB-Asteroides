@@ -1,10 +1,8 @@
 import mongoose from 'mongoose';
-
 const Schema = mongoose.Schema;
 
-const AsteroidSchema = new Schema({
-    
-    fullName: {
+const NeasSchema = new Schema({
+    full_name: {
         type: String,
         required: true
     },
@@ -34,4 +32,6 @@ const AsteroidSchema = new Schema({
     }
 });
 
-const Asteroid = mongoose.model('Asteroid', AsteroidSchema);
+const Neas = mongoose.model('Neas', NeasSchema);
+
+module.exports = Neas;
